@@ -2,6 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   margin: 20px 0;
+  img {
+    width: 345px;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+  }
   .ship__information {
     padding: 15px 15px 20px 15px;
     background-color: white;
