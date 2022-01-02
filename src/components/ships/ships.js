@@ -10,7 +10,7 @@ const client = new ApolloClient({
 
 const information = gql`
   {
-    launchesPast(limit: 1) {
+    launchesPast(limit: 5) {
       ships {
         name
         home_port
@@ -21,30 +21,31 @@ const information = gql`
   }
 `;
 
-function Ships() {
+function Ships(props) {
   const { data, loading, error } = useQuery(information);
   if (loading) return "Loading...";
   if (error) return <pre>{error.message}</pre>;
+  console.log(data);
   return (
     <Container>
       <h2 className="ships__title">Rescue Ships</h2>
       <Ship
-        images={data.launchesPast[0].ships[0].image}
-        portTitle={data.launchesPast[0].ships[0].home_port}
-        shipName={data.launchesPast[0].ships[0].name}
-        shipWeight={data.launchesPast[0].ships[0].weight_kg}
+        images={props.image_ship}
+        portTitle={props.home_port}
+        shipName={props.ship_name}
+        shipWeight={props.ship_weight}
       />
       <Ship
-        images={data.launchesPast[0].ships[1].image}
-        portTitle={data.launchesPast[0].ships[1].home_port}
-        shipName={data.launchesPast[0].ships[1].name}
-        shipWeight={data.launchesPast[0].ships[1].weight_kg}
+        images={props.image_ship_1}
+        portTitle={props.home_port_1}
+        shipName={props.ship_name_1}
+        shipWeight={props.ship_weight_1}
       />
       <Ship
-        images={data.launchesPast[0].ships[2].image}
-        portTitle={data.launchesPast[0].ships[2].home_port}
-        shipName={data.launchesPast[0].ships[2].name}
-        shipWeight={data.launchesPast[0].ships[2].weight_kg}
+        images={props.image_ship_2}
+        portTitle={props.home_port_2}
+        shipName={props.ship_name_2}
+        shipWeight={props.ship_weight_2}
       />
     </Container>
   );

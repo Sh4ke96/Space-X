@@ -1,4 +1,5 @@
 import Card from "./components/card/card";
+import Header from "./components/header/header";
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <div className="App">
+        <Header />
         <Card />
       </div>
     </ApolloProvider>
