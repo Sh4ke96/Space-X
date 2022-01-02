@@ -1,11 +1,6 @@
 import React from "react";
 import { Container } from "./mission.styled";
-import { ApolloClient, InMemoryCache, gql, useQuery } from "@apollo/client";
-
-const client = new ApolloClient({
-  uri: "https://api.spacex.land/graphql/",
-  cache: new InMemoryCache(),
-});
+import { gql, useQuery } from "@apollo/client";
 
 const information = gql`
   {
@@ -23,7 +18,7 @@ const information = gql`
 `;
 
 function Mission(props) {
-  const { data, loading, error } = useQuery(information);
+  const { loading, error } = useQuery(information);
   if (loading) return "Loading...";
   if (error) return <pre>{error.message}</pre>;
   return (

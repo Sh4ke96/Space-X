@@ -2,12 +2,7 @@ import React from "react";
 import { Wrapper } from "./card.styled";
 import Mission from "../mission/mission";
 import Ships from "../ships/ships";
-import { ApolloClient, InMemoryCache, gql, useQuery } from "@apollo/client";
-
-const client = new ApolloClient({
-  uri: "https://api.spacex.land/graphql/",
-  cache: new InMemoryCache(),
-});
+import { gql, useQuery } from "@apollo/client";
 
 const information = gql`
   {
