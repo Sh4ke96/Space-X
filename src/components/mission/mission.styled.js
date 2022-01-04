@@ -77,7 +77,7 @@ export const Container = styled.div`
       text-transform: uppercase;
       cursor: pointer;
       @media only screen and (min-width: 700px) {
-        width: 80%;
+        width: 300px;
       }
     }
   }

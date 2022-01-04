@@ -4,7 +4,7 @@ export const Container = styled.div`
   width: 345px;
   margin: 20px 0;
   @media only screen and (min-width: 1200px) {
-    margin: 0 15px;
+    margin: 15px;
   }
   img {
     width: 345px;

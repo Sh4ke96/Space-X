@@ -8,8 +8,10 @@ export const Container = styled.div`
   padding: 17px 15px;
   .ships__wrapper {
     display: flex;
+    flex-direction: column;
     @media only screen and (min-width: 1200px) {
       margin-top: 15px;
+      flex-direction: row;
     }
   }
   .ships__title {

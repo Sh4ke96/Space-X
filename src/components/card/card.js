@@ -81,6 +81,14 @@ function Card() {
           home_port={data.launchesPast[2].ships[0].home_port}
           ship_name={data.launchesPast[2].ships[0].name}
           ship_weight={data.launchesPast[2].ships[0].weight_kg}
+          image_ship_1={data.launchesPast[0].ships[1].image}
+          home_port_1={data.launchesPast[0].ships[1].home_port}
+          ship_name_1={data.launchesPast[0].ships[1].name}
+          ship_weight_1={data.launchesPast[0].ships[1].weight_kg}
+          image_ship_2={data.launchesPast[0].ships[2].image}
+          home_port_2={data.launchesPast[0].ships[2].home_port}
+          ship_name_2={data.launchesPast[0].ships[2].name}
+          ship_weight_2={data.launchesPast[0].ships[2].weight_kg}
         />
       ) : (
         <p className="ship__error">There is no ships rescue</p>
