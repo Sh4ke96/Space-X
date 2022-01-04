@@ -29,9 +29,9 @@ function Card() {
   const { data, loading, error } = useQuery(information);
   if (loading) return "Loading...";
   if (error) return <pre>{error.message}</pre>;
-  console.log(data);
-  console.log(data.launchesPast[0].ships.length);
-  console.log(data.launchesPast[2].ships.length);
+  // console.log(data);
+  // console.log(data.launchesPast[0].ships.length);
+  // console.log(data.launchesPast[2].ships.length);
   return (
     <Wrapper>
       <Mission

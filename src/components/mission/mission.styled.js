@@ -2,20 +2,32 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
+  display: flex;
+  flex-direction: column;
   padding: 17px 15px;
   border: 1px solid #5c5c5d;
   border-width: 1px 0px;
+  @media only screen and (min-width: 700px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
   .mission__container {
     .mission__title {
       font-size: 14px;
       font-weight: 500;
       color: #868686;
       text-transform: uppercase;
+      @media only screen and (min-width: 1200px) {
+        font-size: 16px;
+      }
     }
     .mission__subtitle {
       margin-top: 6px;
       font-size: 34px;
       font-weight: 700;
+      @media only screen and (min-width: 1200px) {
+        font-size: 43px;
+      }
     }
   }
   .rocket__container {
@@ -25,6 +37,9 @@ export const Container = styled.div`
       font-weight: 500;
       color: #868686;
       text-transform: uppercase;
+      @media only screen and (min-width: 1200px) {
+        font-size: 16px;
+      }
     }
     .rocket__subcontainer {
       display: flex;
@@ -32,6 +47,9 @@ export const Container = styled.div`
       .rocket__subtitle {
         font-size: 16px;
         font-weight: 500;
+        @media only screen and (min-width: 1200px) {
+          font-size: 18px;
+        }
       }
       .rocket__status {
         display: flex;
@@ -58,20 +76,32 @@ export const Container = styled.div`
       font-weight: 500;
       text-transform: uppercase;
       cursor: pointer;
+      @media only screen and (min-width: 700px) {
+        width: 80%;
+      }
     }
   }
   .launch__container {
     margin-top: 27px;
+    @media only screen and (min-width: 700px) {
+      margin-top: 0;
+    }
     .launch__title {
       font-size: 14px;
       font-weight: 500;
       color: #868686;
       text-transform: uppercase;
+      @media only screen and (min-width: 1200px) {
+        font-size: 16px;
+      }
     }
     .launch__date {
       margin-top: 7px;
       font-size: 16px;
       font-weight: 500;
+      @media only screen and (min-width: 1200px) {
+        font-size: 18px;
+      }
     }
   }
   .site__container {
@@ -81,11 +111,17 @@ export const Container = styled.div`
       font-weight: 500;
       color: #868686;
       text-transform: uppercase;
+      @media only screen and (min-width: 1200px) {
+        font-size: 16px;
+      }
     }
     .site__place {
       margin-top: 7px;
       font-size: 16px;
       font-weight: 500;
+      @media only screen and (min-width: 1200px) {
+        font-size: 18px;
+      }
     }
   }
 `;

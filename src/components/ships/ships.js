@@ -23,24 +23,26 @@ function Ships(props) {
   return (
     <Container>
       <h2 className="ships__title">Rescue Ships</h2>
-      <Ship
-        images={props.image_ship}
-        portTitle={props.home_port}
-        shipName={props.ship_name}
-        shipWeight={props.ship_weight}
-      />
-      <Ship
-        images={props.image_ship_1}
-        portTitle={props.home_port_1}
-        shipName={props.ship_name_1}
-        shipWeight={props.ship_weight_1}
-      />
-      <Ship
-        images={props.image_ship_2}
-        portTitle={props.home_port_2}
-        shipName={props.ship_name_2}
-        shipWeight={props.ship_weight_2}
-      />
+      <div className="ships__wrapper">
+        <Ship
+          images={props.image_ship}
+          portTitle={props.home_port}
+          shipName={props.ship_name}
+          shipWeight={props.ship_weight || "N/A"}
+        />
+        <Ship
+          images={props.image_ship_1}
+          portTitle={props.home_port_1}
+          shipName={props.ship_name_1}
+          shipWeight={props.ship_weight_1 || "N/A"}
+        />
+        <Ship
+          images={props.image_ship_2}
+          portTitle={props.home_port_2}
+          shipName={props.ship_name_2}
+          shipWeight={props.ship_weight_2 || "N/A"}
+        />
+      </div>
     </Container>
   );
 }

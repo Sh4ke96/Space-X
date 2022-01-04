@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  width: 345px;
   margin: 20px 0;
+  @media only screen and (min-width: 1200px) {
+    margin: 0 15px;
+  }
   img {
     width: 345px;
     height: 200px;

@@ -6,6 +6,12 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   background: linear-gradient(297.9deg, #323237 15.11%, #000000 90.89%);
+  @media only screen and (min-width: 500px) {
+    width: 100%;
+  }
+  @media only screen and (min-width: 1200px) {
+    width: 90%;
+  }
   .ship__error {
     padding: 15px 0;
     color: #868686;
