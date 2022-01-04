@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Space-X/static/css/main.77df96d2.css",
+    "main.js": "/Space-X/static/js/main.120a0953.js",
+    "index.html": "/Space-X/index.html",
+    "main.77df96d2.css.map": "/Space-X/static/css/main.77df96d2.css.map",
+    "main.120a0953.js.map": "/Space-X/static/js/main.120a0953.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77df96d2.css",
+    "static/js/main.120a0953.js"
+  ]
+}
