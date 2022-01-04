@@ -4,7 +4,7 @@ import { Container } from "./ship.styled";
 function Ship(props) {
   return (
     <Container>
-      <img src={props.images} alt="ship image" />
+      <img src={props.images} alt="ship-image" />
       <div className="ship__information">
         <h1 className="ship__name">{props.shipName}</h1>
         <div className="ship__details">
